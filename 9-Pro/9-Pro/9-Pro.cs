@@ -31,7 +31,10 @@ namespace _9_Pro
         private void button1_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(1);
-
+            System.Diagnostics.Process.Start("calc.exe");
+            System.Threading.Thread.Sleep(500);
+            Tabs.SelectTab(0);
+            BackButton.Enabled = false;
 
             //Junk, don't touch it
             Button clickedButton = sender as Button;
@@ -39,7 +42,6 @@ namespace _9_Pro
             {
                 //b.Enabled = false;
                 //b.Visible = false;
-                BackButton.Enabled = true;
             }
         }
 
@@ -50,8 +52,7 @@ namespace _9_Pro
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
-                //b.Visible = false;
-                BackButton.Enabled = true;
+                //b.Visible = false;;
             }
         }
         private void button3_Click(object sender, EventArgs e)
