@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -38,6 +39,16 @@
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.BackButton = new System.Windows.Forms.Button();
+            this.MenuTab = new System.Windows.Forms.TabPage();
+            this.Button1Tab = new System.Windows.Forms.TabPage();
+            this.Button2Tab = new System.Windows.Forms.TabPage();
+            this.Button3Tab = new System.Windows.Forms.TabPage();
+            this.Button4Tab = new System.Windows.Forms.TabPage();
+            this.Button5Tab = new System.Windows.Forms.TabPage();
+            this.Button6Tab = new System.Windows.Forms.TabPage();
+            this.Button7Tab = new System.Windows.Forms.TabPage();
+            this.Button8Tab = new System.Windows.Forms.TabPage();
+            this.Button9Tab = new System.Windows.Forms.TabPage();
             this.SuspendLayout();
             // 
             // button1
@@ -132,13 +143,83 @@
             // 
             // BackButton
             // 
-            this.BackButton.Location = new System.Drawing.Point(12, 185);
+            this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
+            this.BackButton.Location = new System.Drawing.Point(12, 180);
             this.BackButton.Name = "BackButton";
-            this.BackButton.Size = new System.Drawing.Size(71, 23);
+            this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
-            this.BackButton.Text = "Back";
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // MenuTab
+            // 
+            this.MenuTab.Location = new System.Drawing.Point(0, 0);
+            this.MenuTab.Name = "MenuTab";
+            this.MenuTab.Size = new System.Drawing.Size(200, 100);
+            this.MenuTab.TabIndex = 0;
+            // 
+            // Button1Tab
+            // 
+            this.Button1Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button1Tab.Name = "Button1Tab";
+            this.Button1Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button1Tab.TabIndex = 0;
+            // 
+            // Button2Tab
+            // 
+            this.Button2Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button2Tab.Name = "Button2Tab";
+            this.Button2Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button2Tab.TabIndex = 0;
+            // 
+            // Button3Tab
+            // 
+            this.Button3Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button3Tab.Name = "Button3Tab";
+            this.Button3Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button3Tab.TabIndex = 0;
+            // 
+            // Button4Tab
+            // 
+            this.Button4Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button4Tab.Name = "Button4Tab";
+            this.Button4Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button4Tab.TabIndex = 0;
+            // 
+            // Button5Tab
+            // 
+            this.Button5Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button5Tab.Name = "Button5Tab";
+            this.Button5Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button5Tab.TabIndex = 0;
+            // 
+            // Button6Tab
+            // 
+            this.Button6Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button6Tab.Name = "Button6Tab";
+            this.Button6Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button6Tab.TabIndex = 0;
+            // 
+            // Button7Tab
+            // 
+            this.Button7Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button7Tab.Name = "Button7Tab";
+            this.Button7Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button7Tab.TabIndex = 0;
+            // 
+            // Button8Tab
+            // 
+            this.Button8Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button8Tab.Name = "Button8Tab";
+            this.Button8Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button8Tab.TabIndex = 0;
+            // 
+            // Button9Tab
+            // 
+            this.Button9Tab.Location = new System.Drawing.Point(0, 0);
+            this.Button9Tab.Name = "Button9Tab";
+            this.Button9Tab.Size = new System.Drawing.Size(200, 100);
+            this.Button9Tab.TabIndex = 0;
             // 
             // Form1
             // 
@@ -172,6 +253,16 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button BackButton;
+        private System.Windows.Forms.TabPage MenuTab;
+        private System.Windows.Forms.TabPage Button1Tab;
+        private System.Windows.Forms.TabPage Button2Tab;
+        private System.Windows.Forms.TabPage Button3Tab;
+        private System.Windows.Forms.TabPage Button4Tab;
+        private System.Windows.Forms.TabPage Button5Tab;
+        private System.Windows.Forms.TabPage Button6Tab;
+        private System.Windows.Forms.TabPage Button7Tab;
+        private System.Windows.Forms.TabPage Button8Tab;
+        private System.Windows.Forms.TabPage Button9Tab;
     }
 }
 

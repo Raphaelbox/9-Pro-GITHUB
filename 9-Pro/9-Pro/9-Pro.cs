@@ -17,7 +17,7 @@ namespace _9_Pro
         public Form1()
         {
             InitializeComponent();
-
+            BackButton.Enabled = false;
             buttons = new Button[]
             {
                 button1, button2, button3,
@@ -28,11 +28,13 @@ namespace _9_Pro
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Button clickedButton = sender as Button;            
+
+            Button clickedButton = sender as Button;
             foreach (var b in buttons)
             {
-                    b.Enabled = false;
-                    b.Visible = false;
+                BackButton.Enabled = true;
+                b.Enabled = false;
+                b.Visible = false;
             }
         }
 
@@ -78,11 +80,17 @@ namespace _9_Pro
 
         private void BackButton_Click(object sender, EventArgs e)
         {
+
             foreach (var b in buttons)
             {
                 b.Enabled = true;
                 b.Visible = true;
+                if (b.Enabled == true & b.Visible == true)
+                    {
+                        BackButton.Enabled = false;
+                    }
             }
         }
+
+        }
     }
-}
