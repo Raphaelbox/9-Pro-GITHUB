@@ -31,6 +31,9 @@ namespace _9_Pro
         private void button1_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(1);
+
+
+            //Junk, don't touch it
             Button clickedButton = sender as Button;
             foreach (var b in buttons)
             {
@@ -92,6 +95,11 @@ namespace _9_Pro
                         BackButton.Enabled = false;;
                     }
             }
+        }
+
+        private void MainTab_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
