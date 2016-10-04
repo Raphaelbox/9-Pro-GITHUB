@@ -159,5 +159,15 @@ namespace _9_Pro
         {
 
         }
+
+        private void btn2tab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
