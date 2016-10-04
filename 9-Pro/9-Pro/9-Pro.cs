@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,6 +18,7 @@ namespace _9_Pro
         public Form1()
         {
             InitializeComponent();
+
             BackButton.Enabled = false;
             buttons = new Button[]
             {
@@ -28,10 +30,12 @@ namespace _9_Pro
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Tabs.SelectTab(2);
+            Tabs.SelectTab(1);
             Button clickedButton = sender as Button;
             foreach (var b in buttons)
             {
+                //b.Enabled = false;
+                //b.Visible = false;
                 BackButton.Enabled = true;
             }
         }
@@ -78,17 +82,15 @@ namespace _9_Pro
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-
             foreach (var b in buttons)
             {
                 b.Enabled = true;
                 b.Visible = true;
-                if (b.Enabled == true & b.Visible == true)
+                if (Tabs.SelectedIndex == 0)
                     {
-                        BackButton.Enabled = false;
+                        BackButton.Enabled = false;;
                     }
             }
         }
-
-        }
+    }
     }
