@@ -362,6 +362,7 @@
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.Tabs.ResumeLayout(false);
             this.MainTab.ResumeLayout(false);
             this.ResumeLayout(false);
