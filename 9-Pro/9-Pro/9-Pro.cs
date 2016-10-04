@@ -82,6 +82,7 @@ namespace _9_Pro
 
         private void BackButton_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(0);
             foreach (var b in buttons)
             {
                 b.Enabled = true;
