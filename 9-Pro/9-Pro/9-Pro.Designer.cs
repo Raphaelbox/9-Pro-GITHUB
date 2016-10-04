@@ -236,7 +236,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(-3, -21);
+            this.Tabs.Location = new System.Drawing.Point(90, 47);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(185, 203);
@@ -260,7 +260,6 @@
             this.MainTab.TabIndex = 0;
             this.MainTab.Text = "MainTab";
             this.MainTab.UseVisualStyleBackColor = true;
-            this.MainTab.Click += new System.EventHandler(this.MainTab_Click);
             // 
             // btn1tab
             // 
@@ -348,7 +347,7 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(51, 184);
+            this.BackButton.Location = new System.Drawing.Point(128, 298);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
@@ -359,7 +358,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(237, 294);
+            this.ClientSize = new System.Drawing.Size(357, 369);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Name = "Form1";
