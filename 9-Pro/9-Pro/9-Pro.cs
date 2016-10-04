@@ -28,13 +28,11 @@ namespace _9_Pro
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Tabs.SelectTab(2);
             Button clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 BackButton.Enabled = true;
-                b.Enabled = false;
-                b.Visible = false;
             }
         }
 
