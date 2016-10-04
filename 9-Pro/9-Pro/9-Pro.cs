@@ -31,7 +31,6 @@ namespace _9_Pro
             Button clickedButton = sender as Button;            
             foreach (var b in buttons)
             {
-                
                     b.Enabled = false;
                     b.Visible = false;
             }
@@ -75,6 +74,15 @@ namespace _9_Pro
         private void button9_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            foreach (var b in buttons)
+            {
+                b.Enabled = true;
+                b.Visible = true;
+            }
         }
     }
 }
