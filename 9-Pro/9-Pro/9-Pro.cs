@@ -42,42 +42,103 @@ namespace _9_Pro
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Tabs.SelectTab(2);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
+            }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(3);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(4);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(5);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(6);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(7);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(8);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
+            Tabs.SelectTab(9);
+            Button clickedButton = sender as Button;
+            foreach (var b in buttons)
+            {
+                //b.Enabled = false;
+                //b.Visible = false;
+                BackButton.Enabled = true;
 
+            }
         }
 
         private void BackButton_Click(object sender, EventArgs e)

@@ -236,7 +236,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(-3, -21);
+            this.Tabs.Location = new System.Drawing.Point(90, 47);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(185, 203);
@@ -260,14 +260,13 @@
             this.MainTab.TabIndex = 0;
             this.MainTab.Text = "MainTab";
             this.MainTab.UseVisualStyleBackColor = true;
-            this.MainTab.Click += new System.EventHandler(this.MainTab_Click);
             // 
             // btn1tab
             // 
             this.btn1tab.Location = new System.Drawing.Point(4, 22);
             this.btn1tab.Name = "btn1tab";
             this.btn1tab.Padding = new System.Windows.Forms.Padding(3);
-            this.btn1tab.Size = new System.Drawing.Size(187, 234);
+            this.btn1tab.Size = new System.Drawing.Size(177, 177);
             this.btn1tab.TabIndex = 1;
             this.btn1tab.Text = "btn1tab";
             this.btn1tab.UseVisualStyleBackColor = true;
@@ -277,7 +276,7 @@
             this.btn2tab.Location = new System.Drawing.Point(4, 22);
             this.btn2tab.Name = "btn2tab";
             this.btn2tab.Padding = new System.Windows.Forms.Padding(3);
-            this.btn2tab.Size = new System.Drawing.Size(187, 234);
+            this.btn2tab.Size = new System.Drawing.Size(177, 177);
             this.btn2tab.TabIndex = 2;
             this.btn2tab.Text = "btn2tab";
             this.btn2tab.UseVisualStyleBackColor = true;
@@ -286,7 +285,7 @@
             // 
             this.btn3tab.Location = new System.Drawing.Point(4, 22);
             this.btn3tab.Name = "btn3tab";
-            this.btn3tab.Size = new System.Drawing.Size(187, 234);
+            this.btn3tab.Size = new System.Drawing.Size(177, 177);
             this.btn3tab.TabIndex = 3;
             this.btn3tab.Text = "btn3tab";
             this.btn3tab.UseVisualStyleBackColor = true;
@@ -295,7 +294,7 @@
             // 
             this.btn4tab.Location = new System.Drawing.Point(4, 22);
             this.btn4tab.Name = "btn4tab";
-            this.btn4tab.Size = new System.Drawing.Size(187, 234);
+            this.btn4tab.Size = new System.Drawing.Size(177, 177);
             this.btn4tab.TabIndex = 4;
             this.btn4tab.Text = "btn4tab";
             this.btn4tab.UseVisualStyleBackColor = true;
@@ -304,7 +303,7 @@
             // 
             this.btn5tab.Location = new System.Drawing.Point(4, 22);
             this.btn5tab.Name = "btn5tab";
-            this.btn5tab.Size = new System.Drawing.Size(187, 234);
+            this.btn5tab.Size = new System.Drawing.Size(177, 177);
             this.btn5tab.TabIndex = 5;
             this.btn5tab.Text = "btn5tab";
             this.btn5tab.UseVisualStyleBackColor = true;
@@ -313,7 +312,7 @@
             // 
             this.btn6tab.Location = new System.Drawing.Point(4, 22);
             this.btn6tab.Name = "btn6tab";
-            this.btn6tab.Size = new System.Drawing.Size(187, 234);
+            this.btn6tab.Size = new System.Drawing.Size(177, 177);
             this.btn6tab.TabIndex = 6;
             this.btn6tab.Text = "btn6tab";
             this.btn6tab.UseVisualStyleBackColor = true;
@@ -322,7 +321,7 @@
             // 
             this.btn7tab.Location = new System.Drawing.Point(4, 22);
             this.btn7tab.Name = "btn7tab";
-            this.btn7tab.Size = new System.Drawing.Size(187, 234);
+            this.btn7tab.Size = new System.Drawing.Size(177, 177);
             this.btn7tab.TabIndex = 7;
             this.btn7tab.Text = "btn7tab";
             this.btn7tab.UseVisualStyleBackColor = true;
@@ -331,7 +330,7 @@
             // 
             this.btn8tab.Location = new System.Drawing.Point(4, 22);
             this.btn8tab.Name = "btn8tab";
-            this.btn8tab.Size = new System.Drawing.Size(187, 234);
+            this.btn8tab.Size = new System.Drawing.Size(177, 177);
             this.btn8tab.TabIndex = 8;
             this.btn8tab.Text = "btn8tab";
             this.btn8tab.UseVisualStyleBackColor = true;
@@ -340,7 +339,7 @@
             // 
             this.btn9tab.Location = new System.Drawing.Point(4, 22);
             this.btn9tab.Name = "btn9tab";
-            this.btn9tab.Size = new System.Drawing.Size(187, 234);
+            this.btn9tab.Size = new System.Drawing.Size(177, 177);
             this.btn9tab.TabIndex = 9;
             this.btn9tab.Text = "btn9tab";
             this.btn9tab.UseVisualStyleBackColor = true;
@@ -348,7 +347,7 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(51, 184);
+            this.BackButton.Location = new System.Drawing.Point(128, 298);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
@@ -359,7 +358,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(179, 214);
+            this.ClientSize = new System.Drawing.Size(357, 369);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Name = "Form1";
