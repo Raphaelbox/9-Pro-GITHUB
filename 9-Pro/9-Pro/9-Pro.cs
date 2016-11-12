@@ -1,37 +1,43 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
+using System.Diagnostics;
+using System.IO;
+using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
 namespace _9_Pro
 {
     public partial class Form1 : Form
     {
-        private Button[] buttons;
-
+        private readonly Button[] buttons;
+        private string path = Path.GetDirectoryName(Application.ExecutablePath);
+        //Button2
+        public Process prc = new Process();
+        public string userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+        public string windir = Environment.GetEnvironmentVariable("WINDIR");
+        //Stuff in Form
         public Form1()
         {
             InitializeComponent();
-
+            Tabs.SelectTab(0);
             BackButton.Enabled = false;
-            buttons = new Button[]
+            buttons = new[]
             {
                 button1, button2, button3,
                 button6, button5, button4,
-                button7, button8, button9,
+                button7, button8, button9
             };
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            var clickedButton = sender as Button;
             Tabs.SelectTab(1);
-            Button clickedButton = sender as Button;
+            Process.Start("calc.exe");
+            var timer1 = new Timer();
+            timer1.Interval = 3000;
+            timer1.Tick += (obj, args) => { Tabs.SelectTab(0); };
+            timer1.Start();
+
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -43,7 +49,7 @@ namespace _9_Pro
         private void button2_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(2);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -51,93 +57,88 @@ namespace _9_Pro
                 BackButton.Enabled = true;
             }
         }
+
         private void button3_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(3);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
+
         private void button4_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(4);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(5);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(6);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(7);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(8);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
             Tabs.SelectTab(9);
-            Button clickedButton = sender as Button;
+            var clickedButton = sender as Button;
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
                 //b.Visible = false;
                 BackButton.Enabled = true;
-
             }
         }
 
@@ -149,25 +150,89 @@ namespace _9_Pro
                 b.Enabled = true;
                 b.Visible = true;
                 if (Tabs.SelectedIndex == 0)
-                    {
-                        BackButton.Enabled = false;;
-                    }
+                {
+                    BackButton.Enabled = false;
+                    ;
+                }
             }
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
-        private void btn2tab_Click(object sender, EventArgs e)
-        {
-
-        }
+        //Button2
 
         private void button10_Click(object sender, EventArgs e)
         {
+            Process.Start("notepad.exe");
+        }
 
+        private void tab2button1_Click(object sender, EventArgs e)
+        {
+            var deskPath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = deskPath;
+            prc.Start();
+        }
+
+        private void tab2button2_Click(object sender, EventArgs e)
+        {
+            var downloadPath = Path.Combine(userPath, "Downloads");
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = downloadPath;
+            prc.Start();
+        }
+
+        private void tab2button3_Click(object sender, EventArgs e)
+        {
+            var docsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = docsPath;
+            prc.Start();
+        }
+
+        private void tab2button4_Click(object sender, EventArgs e)
+        {
+            var pcPath = Environment.GetFolderPath(Environment.SpecialFolder.MyComputer);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = pcPath;
+            prc.Start();
+        }
+
+        private void tab2button5_Click(object sender, EventArgs e)
+        {
+            var musicPath = Environment.GetFolderPath(Environment.SpecialFolder.MyMusic);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = musicPath;
+            prc.Start();
+        }
+
+        private void tab2button6_Click(object sender, EventArgs e)
+        {
+            var picsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = picsPath;
+            prc.Start();
+        }
+
+        private void tab2button7_Click(object sender, EventArgs e)
+        {
+            var vidsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyVideos);
+
+            prc.StartInfo.FileName = windir + @"\explorer.exe";
+            prc.StartInfo.Arguments = vidsPath;
+            prc.Start();
+        }
+
+        private void tab2button9_Click(object sender, EventArgs e)
+        {
+            Process.Start("mspaint.exe");
         }
     }
-    }
+}

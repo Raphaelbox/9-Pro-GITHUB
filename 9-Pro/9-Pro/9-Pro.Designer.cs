@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -50,8 +49,26 @@
             this.Button9Tab = new System.Windows.Forms.TabPage();
             this.Tabs = new System.Windows.Forms.TabControl();
             this.MainTab = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.btn1tab = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.btn2tab = new System.Windows.Forms.TabPage();
+            this.tab2button9 = new System.Windows.Forms.Button();
+            this.tab2button8 = new System.Windows.Forms.Button();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tab2button7 = new System.Windows.Forms.Button();
+            this.tab2button6 = new System.Windows.Forms.Button();
+            this.tab2button5 = new System.Windows.Forms.Button();
+            this.tab2button4 = new System.Windows.Forms.Button();
+            this.tab2button3 = new System.Windows.Forms.Button();
+            this.tab2button2 = new System.Windows.Forms.Button();
+            this.tab2button1 = new System.Windows.Forms.Button();
             this.btn3tab = new System.Windows.Forms.TabPage();
             this.btn4tab = new System.Windows.Forms.TabPage();
             this.btn5tab = new System.Windows.Forms.TabPage();
@@ -60,45 +77,18 @@
             this.btn8tab = new System.Windows.Forms.TabPage();
             this.btn9tab = new System.Windows.Forms.TabPage();
             this.BackButton = new System.Windows.Forms.Button();
-            this.tab2button1 = new System.Windows.Forms.Button();
-            this.tab2button2 = new System.Windows.Forms.Button();
-            this.tab2button3 = new System.Windows.Forms.Button();
-            this.tab2button4 = new System.Windows.Forms.Button();
-            this.tab2button5 = new System.Windows.Forms.Button();
-            this.tab2button6 = new System.Windows.Forms.Button();
-            this.tab2button7 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.tab2button8 = new System.Windows.Forms.Button();
-            this.tab2button9 = new System.Windows.Forms.Button();
-            this.tab2button10 = new System.Windows.Forms.Button();
             this.Tabs.SuspendLayout();
             this.MainTab.SuspendLayout();
+            this.btn1tab.SuspendLayout();
             this.btn2tab.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(6, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(50, 50);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -262,7 +252,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(-2, -21);
+            this.Tabs.Location = new System.Drawing.Point(-4, -21);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(186, 205);
@@ -287,8 +277,19 @@
             this.MainTab.Text = "MainTab";
             this.MainTab.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(6, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 50);
+            this.button1.TabIndex = 0;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // btn1tab
             // 
+            this.btn1tab.Controls.Add(this.label1);
             this.btn1tab.Location = new System.Drawing.Point(4, 22);
             this.btn1tab.Name = "btn1tab";
             this.btn1tab.Padding = new System.Windows.Forms.Padding(3);
@@ -297,9 +298,17 @@
             this.btn1tab.Text = "btn1tab";
             this.btn1tab.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(44, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Calculator ready!";
+            // 
             // btn2tab
             // 
-            this.btn2tab.Controls.Add(this.tab2button10);
             this.btn2tab.Controls.Add(this.tab2button9);
             this.btn2tab.Controls.Add(this.tab2button8);
             this.btn2tab.Controls.Add(this.pictureBox7);
@@ -323,7 +332,166 @@
             this.btn2tab.TabIndex = 2;
             this.btn2tab.Text = "btn2tab";
             this.btn2tab.UseVisualStyleBackColor = true;
-            this.btn2tab.Click += new System.EventHandler(this.btn2tab_Click);
+            // 
+            // tab2button9
+            // 
+            this.tab2button9.Image = ((System.Drawing.Image)(resources.GetObject("tab2button9.Image")));
+            this.tab2button9.Location = new System.Drawing.Point(100, 98);
+            this.tab2button9.Name = "tab2button9";
+            this.tab2button9.Size = new System.Drawing.Size(75, 75);
+            this.tab2button9.TabIndex = 17;
+            this.tab2button9.UseVisualStyleBackColor = true;
+            this.tab2button9.Click += new System.EventHandler(this.tab2button9_Click);
+            // 
+            // tab2button8
+            // 
+            this.tab2button8.Image = ((System.Drawing.Image)(resources.GetObject("tab2button8.Image")));
+            this.tab2button8.Location = new System.Drawing.Point(100, 6);
+            this.tab2button8.Name = "tab2button8";
+            this.tab2button8.Size = new System.Drawing.Size(75, 75);
+            this.tab2button8.TabIndex = 16;
+            this.tab2button8.UseVisualStyleBackColor = true;
+            this.tab2button8.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(5, 153);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox7.TabIndex = 15;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(5, 128);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox6.TabIndex = 14;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(5, 103);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox5.TabIndex = 13;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(5, 78);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox4.TabIndex = 12;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(5, 53);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(5, 28);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // tab2button7
+            // 
+            this.tab2button7.Location = new System.Drawing.Point(7, 153);
+            this.tab2button7.Name = "tab2button7";
+            this.tab2button7.Size = new System.Drawing.Size(64, 23);
+            this.tab2button7.TabIndex = 6;
+            this.tab2button7.Text = "Videos";
+            this.tab2button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button7.UseVisualStyleBackColor = true;
+            this.tab2button7.Click += new System.EventHandler(this.tab2button7_Click);
+            // 
+            // tab2button6
+            // 
+            this.tab2button6.Location = new System.Drawing.Point(18, 128);
+            this.tab2button6.Name = "tab2button6";
+            this.tab2button6.Size = new System.Drawing.Size(59, 23);
+            this.tab2button6.TabIndex = 5;
+            this.tab2button6.Text = "Pictures";
+            this.tab2button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button6.UseVisualStyleBackColor = true;
+            this.tab2button6.Click += new System.EventHandler(this.tab2button6_Click);
+            // 
+            // tab2button5
+            // 
+            this.tab2button5.Location = new System.Drawing.Point(8, 103);
+            this.tab2button5.Name = "tab2button5";
+            this.tab2button5.Size = new System.Drawing.Size(59, 23);
+            this.tab2button5.TabIndex = 4;
+            this.tab2button5.Text = "Music";
+            this.tab2button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button5.UseVisualStyleBackColor = true;
+            this.tab2button5.Click += new System.EventHandler(this.tab2button5_Click);
+            // 
+            // tab2button4
+            // 
+            this.tab2button4.Location = new System.Drawing.Point(7, 78);
+            this.tab2button4.Name = "tab2button4";
+            this.tab2button4.Size = new System.Drawing.Size(68, 23);
+            this.tab2button4.TabIndex = 3;
+            this.tab2button4.Text = "This PC";
+            this.tab2button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button4.UseVisualStyleBackColor = true;
+            this.tab2button4.Click += new System.EventHandler(this.tab2button4_Click);
+            // 
+            // tab2button3
+            // 
+            this.tab2button3.Location = new System.Drawing.Point(23, 53);
+            this.tab2button3.Name = "tab2button3";
+            this.tab2button3.Size = new System.Drawing.Size(69, 23);
+            this.tab2button3.TabIndex = 2;
+            this.tab2button3.Text = "Documents";
+            this.tab2button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button3.UseVisualStyleBackColor = true;
+            this.tab2button3.Click += new System.EventHandler(this.tab2button3_Click);
+            // 
+            // tab2button2
+            // 
+            this.tab2button2.Location = new System.Drawing.Point(10, 28);
+            this.tab2button2.Name = "tab2button2";
+            this.tab2button2.Size = new System.Drawing.Size(81, 23);
+            this.tab2button2.TabIndex = 1;
+            this.tab2button2.Text = "Downloads";
+            this.tab2button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button2.UseVisualStyleBackColor = true;
+            this.tab2button2.Click += new System.EventHandler(this.tab2button2_Click);
+            // 
+            // tab2button1
+            // 
+            this.tab2button1.Location = new System.Drawing.Point(22, 3);
+            this.tab2button1.Name = "tab2button1";
+            this.tab2button1.Size = new System.Drawing.Size(56, 23);
+            this.tab2button1.TabIndex = 0;
+            this.tab2button1.Text = "Desktop";
+            this.tab2button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tab2button1.UseVisualStyleBackColor = true;
+            this.tab2button1.Click += new System.EventHandler(this.tab2button1_Click);
             // 
             // btn3tab
             // 
@@ -391,193 +559,34 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(54, 187);
+            this.BackButton.Location = new System.Drawing.Point(50, 185);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
             // 
-            // tab2button1
-            // 
-            this.tab2button1.Location = new System.Drawing.Point(22, 3);
-            this.tab2button1.Name = "tab2button1";
-            this.tab2button1.Size = new System.Drawing.Size(56, 23);
-            this.tab2button1.TabIndex = 0;
-            this.tab2button1.Text = "Desktop";
-            this.tab2button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button1.UseVisualStyleBackColor = true;
-            // 
-            // tab2button2
-            // 
-            this.tab2button2.Location = new System.Drawing.Point(10, 28);
-            this.tab2button2.Name = "tab2button2";
-            this.tab2button2.Size = new System.Drawing.Size(81, 23);
-            this.tab2button2.TabIndex = 1;
-            this.tab2button2.Text = "Downloads";
-            this.tab2button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button2.UseVisualStyleBackColor = true;
-            // 
-            // tab2button3
-            // 
-            this.tab2button3.Location = new System.Drawing.Point(23, 53);
-            this.tab2button3.Name = "tab2button3";
-            this.tab2button3.Size = new System.Drawing.Size(69, 23);
-            this.tab2button3.TabIndex = 2;
-            this.tab2button3.Text = "Documents";
-            this.tab2button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button3.UseVisualStyleBackColor = true;
-            // 
-            // tab2button4
-            // 
-            this.tab2button4.Location = new System.Drawing.Point(7, 78);
-            this.tab2button4.Name = "tab2button4";
-            this.tab2button4.Size = new System.Drawing.Size(68, 23);
-            this.tab2button4.TabIndex = 3;
-            this.tab2button4.Text = "This PC";
-            this.tab2button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button4.UseVisualStyleBackColor = true;
-            // 
-            // tab2button5
-            // 
-            this.tab2button5.Location = new System.Drawing.Point(8, 103);
-            this.tab2button5.Name = "tab2button5";
-            this.tab2button5.Size = new System.Drawing.Size(59, 23);
-            this.tab2button5.TabIndex = 4;
-            this.tab2button5.Text = "Music";
-            this.tab2button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button5.UseVisualStyleBackColor = true;
-            // 
-            // tab2button6
-            // 
-            this.tab2button6.Location = new System.Drawing.Point(18, 128);
-            this.tab2button6.Name = "tab2button6";
-            this.tab2button6.Size = new System.Drawing.Size(59, 23);
-            this.tab2button6.TabIndex = 5;
-            this.tab2button6.Text = "Pictures";
-            this.tab2button6.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button6.UseVisualStyleBackColor = true;
-            // 
-            // tab2button7
-            // 
-            this.tab2button7.Location = new System.Drawing.Point(7, 153);
-            this.tab2button7.Name = "tab2button7";
-            this.tab2button7.Size = new System.Drawing.Size(64, 23);
-            this.tab2button7.TabIndex = 6;
-            this.tab2button7.Text = "Videos";
-            this.tab2button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tab2button7.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(5, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(5, 28);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(5, 53);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(5, 78);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox4.TabIndex = 12;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(5, 103);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox5.TabIndex = 13;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(5, 128);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox6.TabIndex = 14;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(5, 153);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox7.TabIndex = 15;
-            this.pictureBox7.TabStop = false;
-            // 
-            // tab2button8
-            // 
-            this.tab2button8.Image = ((System.Drawing.Image)(resources.GetObject("tab2button8.Image")));
-            this.tab2button8.Location = new System.Drawing.Point(126, 12);
-            this.tab2button8.Name = "tab2button8";
-            this.tab2button8.Size = new System.Drawing.Size(46, 46);
-            this.tab2button8.TabIndex = 16;
-            this.tab2button8.UseVisualStyleBackColor = true;
-            this.tab2button8.Click += new System.EventHandler(this.button10_Click);
-            // 
-            // tab2button9
-            // 
-            this.tab2button9.Image = ((System.Drawing.Image)(resources.GetObject("tab2button9.Image")));
-            this.tab2button9.Location = new System.Drawing.Point(126, 64);
-            this.tab2button9.Name = "tab2button9";
-            this.tab2button9.Size = new System.Drawing.Size(46, 46);
-            this.tab2button9.TabIndex = 17;
-            this.tab2button9.UseVisualStyleBackColor = true;
-            // 
-            // tab2button10
-            // 
-            this.tab2button10.Image = ((System.Drawing.Image)(resources.GetObject("tab2button10.Image")));
-            this.tab2button10.Location = new System.Drawing.Point(126, 116);
-            this.tab2button10.Name = "tab2button10";
-            this.tab2button10.Size = new System.Drawing.Size(46, 46);
-            this.tab2button10.TabIndex = 18;
-            this.tab2button10.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(183, 220);
+            this.ClientSize = new System.Drawing.Size(178, 212);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Tabs.ResumeLayout(false);
             this.MainTab.ResumeLayout(false);
+            this.btn1tab.ResumeLayout(false);
+            this.btn1tab.PerformLayout();
             this.btn2tab.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -630,8 +639,8 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button tab2button8;
-        private System.Windows.Forms.Button tab2button10;
         private System.Windows.Forms.Button tab2button9;
+        private System.Windows.Forms.Label label1;
     }
 }
 

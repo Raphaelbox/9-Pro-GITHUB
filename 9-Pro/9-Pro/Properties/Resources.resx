@@ -117,4 +117,41 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Downloads Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Downloads Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Videos Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Videos Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Desktop Folder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Desktop Folder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Notepad alt FIX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Notepad alt FIX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ComputerFIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\ComputerFIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Desktop Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Desktop Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paint FIX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Paint FIX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CalcBTN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\CalcBTN1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Music Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Music Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Documents Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Documents Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pictures Folder FIXED" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Pictures Folder FIXED.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Paint FIX1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Button2\V2\Paint FIX.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

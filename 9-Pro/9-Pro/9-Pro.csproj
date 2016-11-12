@@ -84,6 +84,19 @@
     <None Include="bin\BackButton50x.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Button2\V2\Desktop Folder.png" />
+    <None Include="bin\Button2\V2\ComputerFIXED.png" />
+    <None Include="bin\Button2\V2\Desktop Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Downloads Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Documents Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Music Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Pictures Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Videos Folder FIXED.png" />
+    <None Include="bin\Button2\V2\Notepad FIXED.png" />
+    <None Include="bin\Button2\V2\Notepad alt FIXED.png" />
+    <None Include="bin\Button2\V2\Paint FIX.png" />
+    <None Include="bin\Button2\V2\Notepad alt FIX.png" />
+    <Content Include="bin\CalcBTN1.png" />
     <Content Include="bin\Sizes.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
