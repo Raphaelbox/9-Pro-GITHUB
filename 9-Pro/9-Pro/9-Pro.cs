@@ -62,6 +62,11 @@ namespace _9_Pro
         {
             Tabs.SelectTab(3);
             var clickedButton = sender as Button;
+            Process.Start("www.youtube.com");
+            var timer2 = new Timer();
+            timer2.Interval = 3000;
+            timer2.Tick += (obj, args) => { Tabs.SelectTab(0); };
+            timer2.Start();
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -74,6 +79,7 @@ namespace _9_Pro
         {
             Tabs.SelectTab(4);
             var clickedButton = sender as Button;
+            Process.Start("http://www.quickmeme.com/");
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -233,6 +239,11 @@ namespace _9_Pro
         private void tab2button9_Click(object sender, EventArgs e)
         {
             Process.Start("mspaint.exe");
+        }
+
+        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Made by Yoni & Raphael!");
         }
     }
 }

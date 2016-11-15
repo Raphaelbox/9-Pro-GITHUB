@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -70,13 +71,16 @@
             this.tab2button2 = new System.Windows.Forms.Button();
             this.tab2button1 = new System.Windows.Forms.Button();
             this.btn3tab = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn4tab = new System.Windows.Forms.TabPage();
+            this.label3 = new System.Windows.Forms.Label();
             this.btn5tab = new System.Windows.Forms.TabPage();
             this.btn6tab = new System.Windows.Forms.TabPage();
             this.btn7tab = new System.Windows.Forms.TabPage();
             this.btn8tab = new System.Windows.Forms.TabPage();
             this.btn9tab = new System.Windows.Forms.TabPage();
             this.BackButton = new System.Windows.Forms.Button();
+            this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.Tabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.btn1tab.SuspendLayout();
@@ -88,31 +92,34 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.btn3tab.SuspendLayout();
+            this.btn4tab.SuspendLayout();
             this.SuspendLayout();
             // 
             // button2
             // 
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.Location = new System.Drawing.Point(62, 12);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 1;
-            this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(118, 12);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 2;
-            this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(118, 68);
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(6, 68);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(50, 50);
             this.button4.TabIndex = 3;
@@ -132,7 +139,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(6, 68);
+            this.button6.Location = new System.Drawing.Point(118, 68);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(50, 50);
             this.button6.TabIndex = 5;
@@ -252,7 +259,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(-4, -21);
+            this.Tabs.Location = new System.Drawing.Point(-4, -22);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(186, 205);
@@ -495,6 +502,7 @@
             // 
             // btn3tab
             // 
+            this.btn3tab.Controls.Add(this.label2);
             this.btn3tab.Location = new System.Drawing.Point(4, 22);
             this.btn3tab.Name = "btn3tab";
             this.btn3tab.Size = new System.Drawing.Size(178, 179);
@@ -502,14 +510,33 @@
             this.btn3tab.Text = "btn3tab";
             this.btn3tab.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(46, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 13);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "YouTube ready!";
+            // 
             // btn4tab
             // 
+            this.btn4tab.Controls.Add(this.label3);
             this.btn4tab.Location = new System.Drawing.Point(4, 22);
             this.btn4tab.Name = "btn4tab";
             this.btn4tab.Size = new System.Drawing.Size(178, 179);
             this.btn4tab.TabIndex = 4;
             this.btn4tab.Text = "btn4tab";
             this.btn4tab.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "RANDOM MEME!!";
             // 
             // btn5tab
             // 
@@ -559,12 +586,22 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(50, 185);
+            this.BackButton.Location = new System.Drawing.Point(50, 183);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
             this.BackButton.UseVisualStyleBackColor = true;
             this.BackButton.Click += new System.EventHandler(this.BackButton_Click);
+            // 
+            // notifyIcon1
+            // 
+            this.notifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.notifyIcon1.BalloonTipText = "9 Pro, a typical shortcut program.";
+            this.notifyIcon1.BalloonTipTitle = "9-PRO";
+            this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
+            this.notifyIcon1.Text = "9-PRO";
+            this.notifyIcon1.Visible = true;
+            this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // Form1
             // 
@@ -573,6 +610,7 @@
             this.ClientSize = new System.Drawing.Size(178, 212);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Tabs.ResumeLayout(false);
@@ -587,6 +625,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.btn3tab.ResumeLayout(false);
+            this.btn3tab.PerformLayout();
+            this.btn4tab.ResumeLayout(false);
+            this.btn4tab.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -641,6 +683,9 @@
         private System.Windows.Forms.Button tab2button8;
         private System.Windows.Forms.Button tab2button9;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NotifyIcon notifyIcon1;
     }
 }
 
