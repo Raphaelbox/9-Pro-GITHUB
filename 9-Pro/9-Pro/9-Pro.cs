@@ -27,17 +27,17 @@ namespace _9_Pro
                 button7, button8, button9
             };
         }
-
+        //Buttons
         private void button1_Click(object sender, EventArgs e)
         {
             var clickedButton = sender as Button;
             Tabs.SelectTab(1);
-            Process.Start("calc.exe");
+            /*Process.Start("calc.exe");
             var timer1 = new Timer();
             timer1.Interval = 3000;
             timer1.Tick += (obj, args) => { Tabs.SelectTab(0); };
             timer1.Start();
-
+            */
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -167,7 +167,41 @@ namespace _9_Pro
         {
         }
 
-        //Button2
+        //tab 1
+        private void tab1BopenCalc_Click(object sender, EventArgs e)
+        {
+            Process.Start("calc.exe");
+        }
+
+        private void tab1Bsquare_Click(object sender, EventArgs e)
+        {
+            
+            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
+            tochange = Math.Pow(tochange, 2);
+            tab1textBoxSqaure.Text = tochange.ToString();
+
+            
+        }
+        private void tab1Bpow3_Click(object sender, EventArgs e)
+        {
+            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
+            tochange = Math.Pow(tochange, 3);
+            tab1textBoxSqaure.Text = tochange.ToString();
+        }
+        private void tab1Broot_Click(object sender, EventArgs e)
+        {
+            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
+            tochange = Math.Sqrt(tochange);
+            tab1textBoxSqaure.Text = tochange.ToString();
+        }
+
+
+
+        private void tab1textBoxSqaure_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        //Tab2
 
         private void button10_Click(object sender, EventArgs e)
         {
@@ -245,5 +279,17 @@ namespace _9_Pro
         {
             MessageBox.Show("Made by Yoni & Raphael!");
         }
+
+        private void MainTab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn1tab_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

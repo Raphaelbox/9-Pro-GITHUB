@@ -52,6 +52,9 @@
             this.MainTab = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.btn1tab = new System.Windows.Forms.TabPage();
+            this.tab1Bsquare = new System.Windows.Forms.Button();
+            this.tab1textBoxSqaure = new System.Windows.Forms.TextBox();
+            this.tab1BopenCalc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn2tab = new System.Windows.Forms.TabPage();
             this.tab2button9 = new System.Windows.Forms.Button();
@@ -81,6 +84,9 @@
             this.btn9tab = new System.Windows.Forms.TabPage();
             this.BackButton = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.tab1Bpow3 = new System.Windows.Forms.Button();
+            this.tab1Broot = new System.Windows.Forms.Button();
+            this.tab1textBoxRoot = new System.Windows.Forms.TextBox();
             this.Tabs.SuspendLayout();
             this.MainTab.SuspendLayout();
             this.btn1tab.SuspendLayout();
@@ -259,7 +265,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(-4, -22);
+            this.Tabs.Location = new System.Drawing.Point(12, 6);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(186, 205);
@@ -283,6 +289,7 @@
             this.MainTab.TabIndex = 0;
             this.MainTab.Text = "MainTab";
             this.MainTab.UseVisualStyleBackColor = true;
+            this.MainTab.Click += new System.EventHandler(this.MainTab_Click);
             // 
             // button1
             // 
@@ -296,6 +303,12 @@
             // 
             // btn1tab
             // 
+            this.btn1tab.Controls.Add(this.tab1textBoxRoot);
+            this.btn1tab.Controls.Add(this.tab1Broot);
+            this.btn1tab.Controls.Add(this.tab1Bpow3);
+            this.btn1tab.Controls.Add(this.tab1Bsquare);
+            this.btn1tab.Controls.Add(this.tab1textBoxSqaure);
+            this.btn1tab.Controls.Add(this.tab1BopenCalc);
             this.btn1tab.Controls.Add(this.label1);
             this.btn1tab.Location = new System.Drawing.Point(4, 22);
             this.btn1tab.Name = "btn1tab";
@@ -304,11 +317,41 @@
             this.btn1tab.TabIndex = 1;
             this.btn1tab.Text = "btn1tab";
             this.btn1tab.UseVisualStyleBackColor = true;
+            this.btn1tab.Click += new System.EventHandler(this.btn1tab_Click);
+            // 
+            // tab1Bsquare
+            // 
+            this.tab1Bsquare.Location = new System.Drawing.Point(92, 152);
+            this.tab1Bsquare.Name = "tab1Bsquare";
+            this.tab1Bsquare.Size = new System.Drawing.Size(34, 22);
+            this.tab1Bsquare.TabIndex = 3;
+            this.tab1Bsquare.Text = "^2";
+            this.tab1Bsquare.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tab1Bsquare.UseVisualStyleBackColor = true;
+            this.tab1Bsquare.Click += new System.EventHandler(this.tab1Bsquare_Click);
+            // 
+            // tab1textBoxSqaure
+            // 
+            this.tab1textBoxSqaure.Location = new System.Drawing.Point(6, 153);
+            this.tab1textBoxSqaure.Name = "tab1textBoxSqaure";
+            this.tab1textBoxSqaure.Size = new System.Drawing.Size(80, 20);
+            this.tab1textBoxSqaure.TabIndex = 2;
+            this.tab1textBoxSqaure.TextChanged += new System.EventHandler(this.tab1textBoxSqaure_TextChanged);
+            // 
+            // tab1BopenCalc
+            // 
+            this.tab1BopenCalc.Location = new System.Drawing.Point(6, 6);
+            this.tab1BopenCalc.Name = "tab1BopenCalc";
+            this.tab1BopenCalc.Size = new System.Drawing.Size(107, 23);
+            this.tab1BopenCalc.TabIndex = 1;
+            this.tab1BopenCalc.Text = "Open Calculator";
+            this.tab1BopenCalc.UseVisualStyleBackColor = true;
+            this.tab1BopenCalc.Click += new System.EventHandler(this.tab1BopenCalc_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 79);
+            this.label1.Location = new System.Drawing.Point(92, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 13);
             this.label1.TabIndex = 0;
@@ -586,7 +629,7 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(50, 183);
+            this.BackButton.Location = new System.Drawing.Point(97, 241);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
@@ -603,11 +646,40 @@
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
+            // tab1Bpow3
+            // 
+            this.tab1Bpow3.Location = new System.Drawing.Point(132, 152);
+            this.tab1Bpow3.Name = "tab1Bpow3";
+            this.tab1Bpow3.Size = new System.Drawing.Size(34, 22);
+            this.tab1Bpow3.TabIndex = 4;
+            this.tab1Bpow3.Text = "^3";
+            this.tab1Bpow3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tab1Bpow3.UseVisualStyleBackColor = true;
+            this.tab1Bpow3.Click += new System.EventHandler(this.tab1Bpow3_Click);
+            // 
+            // tab1Broot
+            // 
+            this.tab1Broot.Location = new System.Drawing.Point(132, 127);
+            this.tab1Broot.Name = "tab1Broot";
+            this.tab1Broot.Size = new System.Drawing.Size(34, 22);
+            this.tab1Broot.TabIndex = 5;
+            this.tab1Broot.Text = "root";
+            this.tab1Broot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.tab1Broot.UseVisualStyleBackColor = true;
+            this.tab1Broot.Click += new System.EventHandler(this.tab1Broot_Click);
+            // 
+            // tab1textBoxRoot
+            // 
+            this.tab1textBoxRoot.Location = new System.Drawing.Point(6, 127);
+            this.tab1textBoxRoot.Name = "tab1textBoxRoot";
+            this.tab1textBoxRoot.Size = new System.Drawing.Size(120, 20);
+            this.tab1textBoxRoot.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(178, 212);
+            this.ClientSize = new System.Drawing.Size(273, 281);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -686,6 +758,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Button tab1BopenCalc;
+        private System.Windows.Forms.Button tab1Bsquare;
+        private System.Windows.Forms.TextBox tab1textBoxSqaure;
+        private System.Windows.Forms.Button tab1Bpow3;
+        private System.Windows.Forms.TextBox tab1textBoxRoot;
+        private System.Windows.Forms.Button tab1Broot;
     }
 }
 
