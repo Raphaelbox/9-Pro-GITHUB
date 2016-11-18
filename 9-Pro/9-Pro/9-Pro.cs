@@ -180,6 +180,22 @@ namespace _9_Pro
             Process.Start("calc.exe");
         }
 
+        private void Tab1B0_Click(object sender, EventArgs e)
+        {
+            if ((Tab1Btext.Text == "0") || (isOperationPerformed))
+                Tab1Btext_Result.Clear();
+
+            isOperationPerformed = false;
+            Button button = (Button)sender;
+            if (button.Text == ".")
+            {
+                if (!textBox_Result.Text.Contains("."))
+                    textBox_Result.Text = textBox_Result.Text + button.Text;
+
+            }
+            else
+                textBox_Result.Text = textBox_Result.Text + button.Text;
+
 
         }
 
