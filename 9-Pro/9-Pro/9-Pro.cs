@@ -173,14 +173,12 @@ namespace _9_Pro
             Process.Start("calc.exe");
         }
 
-        private void tab1Bsquare_Click(object sender, EventArgs e)
+        private void tab1Bsquare_Click(object sender, EventArgs e) 
         {
             
-            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
+            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text); 
             tochange = Math.Pow(tochange, 2);
-            tab1textBoxSqaure.Text = tochange.ToString();
-
-            
+            tab1textBoxSqaure.Text = tochange.ToString();           
         }
         private void tab1Bpow3_Click(object sender, EventArgs e)
         {
