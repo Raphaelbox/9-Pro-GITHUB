@@ -10,10 +10,12 @@ namespace _9_Pro
     {
         private readonly Button[] buttons;
         private string path = Path.GetDirectoryName(Application.ExecutablePath);
+
         //Button2
         public Process prc = new Process();
         public string userPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
         public string windir = Environment.GetEnvironmentVariable("WINDIR");
+
         //Stuff in Form
         public Form1()
         {
@@ -27,6 +29,7 @@ namespace _9_Pro
                 button7, button8, button9
             };
         }
+
         //Buttons
         private void button1_Click(object sender, EventArgs e)
         {
@@ -167,40 +170,20 @@ namespace _9_Pro
         {
         }
 
-        //tab 1
+        //Tab1
+        private static Double resultValue = 0;
+        String operationPerformed = "";
+        bool isOperationPerformed = false;
+
         private void tab1BopenCalc_Click(object sender, EventArgs e)
         {
             Process.Start("calc.exe");
         }
 
-        private void tab1Bsquare_Click(object sender, EventArgs e) 
-        {
-            
-            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text); 
-            tochange = Math.Pow(tochange, 2);
-            tab1textBoxSqaure.Text = tochange.ToString();           
-        }
-        private void tab1Bpow3_Click(object sender, EventArgs e)
-        {
-            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
-            tochange = Math.Pow(tochange, 3);
-            tab1textBoxSqaure.Text = tochange.ToString();
-        }
-        private void tab1Broot_Click(object sender, EventArgs e)
-        {
-            Double tochange = Convert.ToInt32(tab1textBoxSqaure.Text);
-            tochange = Math.Sqrt(tochange);
-            tab1textBoxSqaure.Text = tochange.ToString();
-        }
-
-
-
-        private void tab1textBoxSqaure_TextChanged(object sender, EventArgs e)
-        {
 
         }
+
         //Tab2
-
         private void button10_Click(object sender, EventArgs e)
         {
             Process.Start("notepad.exe");
@@ -278,16 +261,19 @@ namespace _9_Pro
             MessageBox.Show("Made by Yoni & Raphael!");
         }
 
-        private void MainTab_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn1tab_Click(object sender, EventArgs e)
         {
 
         }
 
-        
+        private void tab1Broot_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
