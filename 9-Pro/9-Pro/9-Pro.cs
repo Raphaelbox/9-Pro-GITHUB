@@ -4,6 +4,11 @@ using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
+using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.PhantomJS;
+using Selenium;
+
 namespace _9_Pro
 {
     public partial class Form1 : Form
@@ -80,9 +85,26 @@ namespace _9_Pro
 
         private void button4_Click(object sender, EventArgs e)
         {
+            IWebDriver driver = new PhantomJSDriver(@"D:\Users\Raphael\Documents\Programming\C#\Windows Forms\9-Pro\9-Pro-GITHUB\9-Pro\9-Pro\bin");
+
             Tabs.SelectTab(4);
             var clickedButton = sender as Button;
-            Process.Start("http://www.quickmeme.com/");
+
+            driver.Navigate().GoToUrl("http://www.ajokeaday.com/jokes/random");
+
+            var elem =
+                driver.FindElement(
+                    By.CssSelector(
+                        "#bg-boxed > div > div > div > div.col-2-topcontainer > div.col-2-leftcontainer-main > div > div.jd-maincontainer > div > div > div.clearfix.jd-body-container > div.jd-body.jubilat")).GetAttribute("innerHTML");
+
+            string text = elem.ToString()
+                .Replace("<p>", "")
+                .Replace("</p>", "")
+                .Replace("<br>", "")
+                .Replace("</br>", "");
+
+            MessageBox.Show(text);
+            driver.Quit();
             foreach (var b in buttons)
             {
                 //b.Enabled = false;
@@ -171,6 +193,7 @@ namespace _9_Pro
         }
 
         //Tab1
+        /**
         private static Double resultValue = 0;
         String operationPerformed = "";
         bool isOperationPerformed = false;
@@ -291,5 +314,6 @@ namespace _9_Pro
         {
 
         }
+    **/
     }
 }
