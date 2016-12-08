@@ -260,7 +260,7 @@
             this.Tabs.Controls.Add(this.btn7tab);
             this.Tabs.Controls.Add(this.btn8tab);
             this.Tabs.Controls.Add(this.btn9tab);
-            this.Tabs.Location = new System.Drawing.Point(12, 6);
+            this.Tabs.Location = new System.Drawing.Point(-4, -22);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(186, 205);
@@ -533,11 +533,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 83);
+            this.label3.Location = new System.Drawing.Point(53, 81);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 13);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "RANDOM MEME!!";
+            this.label3.Text = "Funny, huh?";
             // 
             // btn5tab
             // 
@@ -587,7 +587,7 @@
             // BackButton
             // 
             this.BackButton.Image = ((System.Drawing.Image)(resources.GetObject("BackButton.Image")));
-            this.BackButton.Location = new System.Drawing.Point(97, 241);
+            this.BackButton.Location = new System.Drawing.Point(51, 184);
             this.BackButton.Name = "BackButton";
             this.BackButton.Size = new System.Drawing.Size(71, 28);
             this.BackButton.TabIndex = 9;
@@ -607,7 +607,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 281);
+            this.ClientSize = new System.Drawing.Size(181, 215);
             this.Controls.Add(this.Tabs);
             this.Controls.Add(this.BackButton);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

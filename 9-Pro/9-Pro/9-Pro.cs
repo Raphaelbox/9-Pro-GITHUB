@@ -193,33 +193,10 @@ namespace _9_Pro
         }
 
         //Tab1
-        /**
-        private static Double resultValue = 0;
-        String operationPerformed = "";
-        bool isOperationPerformed = false;
 
         private void tab1BopenCalc_Click(object sender, EventArgs e)
         {
             Process.Start("calc.exe");
-        }
-
-        private void Tab1B0_Click(object sender, EventArgs e)
-        {
-            if ((Tab1Btext.Text == "0") || (isOperationPerformed))
-                Tab1Btext_Result.Clear();
-
-            isOperationPerformed = false;
-            Button button = (Button)sender;
-            if (button.Text == ".")
-            {
-                if (!textBox_Result.Text.Contains("."))
-                    textBox_Result.Text = textBox_Result.Text + button.Text;
-
-            }
-            else
-                textBox_Result.Text = textBox_Result.Text + button.Text;
-
-
         }
 
         //Tab2
@@ -314,6 +291,5 @@ namespace _9_Pro
         {
 
         }
-    **/
     }
 }
