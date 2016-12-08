@@ -68,6 +68,7 @@ namespace _9_Pro
 
         private void button3_Click(object sender, EventArgs e)
         {
+            //im so amazing
             Tabs.SelectTab(3);
             var clickedButton = sender as Button;
             Process.Start("www.youtube.com");
